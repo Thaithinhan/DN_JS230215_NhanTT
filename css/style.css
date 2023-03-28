@@ -109,7 +109,9 @@ section .like_reply button.reply span {
   background-color: white;
   color: black;
 }
-
+.comment p {
+  text-align: left;
+}
 aside .my_name {
   color: white;
   position: relative;
@@ -280,10 +282,11 @@ footer button {
   .main_content .footer_section_main {
     display: flex;
     align-items: center;
+    border-top: 0.5px solid lightgray;
   }
   .main_content .footer_section_main > div:first-child {
     width: 100px;
-    margin-right: 100px;
+    margin-right: 50px;
     margin-top: 20px;
   }
   .main_content .footer_section_main > div img {
