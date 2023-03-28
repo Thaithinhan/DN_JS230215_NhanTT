@@ -1,0 +1,61 @@
+:root {
+  --main_color: #f6c963;
+}
+* {
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+main {
+  max-width: 600px;
+  margin: 0 auto;
+}
+header {
+  background-image: url(../images/beach3.jpg);
+  background-repeat: no-repeat;
+  height: 350px;
+  position: relative;
+}
+header .trans-box {
+  position: absolute;
+  background-color: var(--main_color);
+  width: 70%;
+  height: 100px;
+  opacity: 0.7;
+  bottom: 30px;
+}
+header h2 {
+  padding-left: 10px;
+  position: absolute;
+  bottom: 30px;
+  width: 45%;
+}
+section ul {
+  list-style: none;
+  display: flex;
+  width: 100%;
+  padding: 0;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+section ul li {
+  width: calc(50% - 13px);
+  margin-bottom: 30px;
+}
+section ul li figure {
+  width: 100%;
+  margin: 0;
+}
+img {
+  width: 100%;
+  border-top: 5px solid var(--main_color);
+}
+.title {
+  font-size: x-large;
+  margin: 0;
+  text-transform: capitalize;
+  font-weight: 600;
+}
+.description {
+  font-size: 15px;
+}
