@@ -1,0 +1,323 @@
+* {
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+main {
+  background-color: #f1f1f1;
+  max-width: 1200px;
+  margin: auto;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+img {
+  width: 100%;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: black;
+  padding: 10px 5px;
+}
+ul.nav_menu {
+  display: none;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  color: white;
+}
+ul.nav_menu li {
+  margin-right: 20px;
+}
+button.search {
+  background-color: inherit;
+  color: white;
+  border: none;
+}
+header {
+  margin-top: 70px;
+  background-color: white;
+}
+header > h1,
+header > p {
+  text-align: center;
+}
+header > p > span {
+  background-color: black;
+  color: white;
+  padding: 0 10px;
+}
+#span_balck span {
+  background-color: grey;
+  color: black;
+}
+header div#background_header {
+  background-image: url(../images/jane.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  width: 100%;
+  padding: 0px 20px;
+}
+header div#background_header > p:first-child {
+  font-size: 25px;
+  font-weight: 700;
+}
+header div#background_header text_large {
+  font-size: 25px;
+  font-weight: 700;
+}
+.content {
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+section {
+  background-color: white;
+  margin-bottom: 20px;
+  padding: 20px 20px;
+}
+section h3,
+section p {
+  text-align: center;
+}
+section h3 {
+  text-transform: uppercase;
+}
+section figure p {
+  text-align: justify;
+}
+section .like_reply {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 0;
+}
+section .like_reply button.like {
+  padding: 10px 20px;
+  background-color: white;
+  border: 0.5px solid;
+}
+section .like_reply button.reply {
+  padding: 10px 20px;
+  background-color: black;
+  border: 0.5px solid;
+  color: white;
+}
+section .like_reply button.reply span {
+  padding: 5px 8px;
+  background-color: white;
+  color: black;
+}
+
+aside .my_name {
+  color: white;
+  position: relative;
+}
+aside img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+aside .my_name h4 {
+  color: white;
+  position: absolute;
+  bottom: 100px;
+  left: 20px;
+}
+aside .my_name p {
+  color: white;
+  position: absolute;
+  bottom: 10px;
+  left: 20px;
+  text-align: justify;
+  padding-right: 30px;
+}
+aside .post h4,
+aside .ads h4,
+aside .tags h4,
+aside .inspired h4,
+aside .follow h4,
+aside .subcribe h4 {
+  background-color: black;
+  color: white;
+  padding: 20px 20px;
+  margin-bottom: 0;
+}
+aside .post ul {
+  list-style: none;
+  padding: 0;
+}
+aside .post ul li {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: white;
+  border-bottom: 0.5px solid lightgray;
+}
+aside ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+aside .post ul li img {
+  width: 100px;
+  height: 100px;
+  margin-right: 30px;
+}
+aside .ads .adv_area {
+  background-color: white;
+  padding: 20px;
+}
+aside .ads .adv_area p {
+  background-color: #f1f1f1;
+  margin: 0;
+  padding: 100px 0;
+  text-align: center;
+}
+aside .tags ul {
+  background-color: white;
+  padding: 10px;
+}
+aside .tags ul li {
+  background-color: #f1f1f1;
+  font-size: 13px;
+}
+aside .tags ul li:first-child {
+  background-color: black;
+  font-size: 14px;
+  color: white;
+  font-weight: bold;
+}
+aside .follow ul li {
+  background: white;
+  padding: 20px 10px;
+}
+aside .follow ul li a {
+  display: inline-block;
+  margin-right: 5px;
+}
+aside .subcribe form {
+  background-color: white;
+  padding: 20px;
+}
+aside .subcribe form input {
+  width: 100%;
+  margin-top: 20px;
+  border-radius: 0;
+  border: 0.5px solid lightgrey;
+  padding: 15px;
+}
+input[type="submit"] {
+  background-color: #f44336;
+  border: solid 0.5px #f44336;
+  color: white;
+}
+footer {
+  background-color: #616161;
+  padding: 10px;
+  color: white;
+  scroll-behavior: smooth;
+}
+footer button {
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  scroll-behavior: smooth;
+}
+/* RESPONSIVE MOBILE FIRST */
+
+@media screen and (min-width: 240px) {
+}
+/*Iphone(480 x 640)*/
+@media screen and (min-width: 320px) {
+}
+/*Tablet nhỏ(480 x 640)*/
+@media screen and (min-width: 480px) {
+}
+/*Ipad dọc(768 x 1024)*/
+@media screen and (min-width: 768px) {
+  ul.nav_menu {
+    display: flex;
+  }
+  .toggle {
+    display: none;
+  }
+  header div#background_header {
+    padding: 200px 20px;
+  }
+  header div#background_header p:first-child {
+    font-size: 25px;
+    font-weight: 700;
+  }
+  header div#background_header .text_large {
+    font-size: 50px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 15px 0;
+  }
+  header div#background_header a {
+    background-color: #e9eeeb;
+    padding: 15px;
+    text-transform: uppercase;
+    color: black;
+    opacity: 0.5;
+  }
+  .content {
+    display: flex;
+    gap: 20px;
+  }
+  .main_content {
+    width: 60%;
+  }
+  .main_content section figure {
+    margin: 0;
+  }
+  .main_content section figure img {
+    width: 100%;
+  }
+
+  .main_content .footer_section_main {
+    display: flex;
+    align-items: center;
+  }
+  .main_content .footer_section_main > div:first-child {
+    width: 100px;
+    margin-right: 100px;
+    margin-top: 20px;
+  }
+  .main_content .footer_section_main > div img {
+    width: 100%;
+  }
+  .main_content .footer_section_main > div img {
+    width: 100%;
+  }
+  aside {
+    width: 40%;
+  }
+  aside .tags ul {
+    background-color: white;
+    display: flex;
+    /* justify-content: space-between; */
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  aside .inspired ul {
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px;
+  }
+  aside .inspired ul li {
+    width: calc(50% - 5px);
+  }
+  aside .inspired ul li img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+  }
+}
+/*Ipad ngang(1024 x 768)*/
+@media screen and (min-width: 1024px) {
+}
